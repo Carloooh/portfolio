@@ -60,7 +60,7 @@ document.addEventListener('scroll', scrollUp);
 
 // Language Switch
 
-const translations = {
+const translations: Record<string, Record<string, string>> = {
   'greetings': {
     en: 'Hi, I am ',
     es: 'Hola, soy ',
@@ -93,10 +93,6 @@ const translations = {
     en: 'Email me',
     es: 'Enviar email',
   },
-  'footer': {
-    en: 'Created by Carlos Azócar',
-    es: 'Creado por Carlos Azócar',
-  },
   'project1': {
     en: 'Project 1',
     es: 'Proyecto 1',
@@ -121,17 +117,25 @@ const translations = {
     en: 'Project 3',
     es: 'Proyecto 3',
   },
+  'cv': {
+    en: 'Download CV',
+    es: 'Descargar CV',
+  },
+  'footer': {
+    en: 'Made with love &lt;3',
+    es: 'Hecho con amor &lt;3',
+  },
 };
 
-let currentLanguage = 'en';
+let currentLanguage: 'en' | 'es' = 'en';
 
 const btnLanguage = document.getElementById('btn-language');
 
-const translateElement = (element) => {
+const translateElement = (element: HTMLElement) => {
   const key = element.getAttribute('data-translate-key');
   if (key && translations[key]) {
     if (element.tagName.toLowerCase() === 'h1' && element.querySelector('.about__name')) {
-      element.innerHTML = `${translations[key][currentLanguage]}<span class="about__name">${translations['myname'][currentLanguage]}</span>`;
+      element.innerHTML = `${translations[key][currentLanguage]}<span class="about__name">${translations['myname'][currentLanguage]}</span>.`;
     } else {
       element.innerHTML = translations[key][currentLanguage];
     }
@@ -144,8 +148,10 @@ const toggleLanguage = () => {
   const elementsToTranslate = document.querySelectorAll('.translate');
 
   elementsToTranslate.forEach((element) => {
-    translateElement(element);
+    translateElement(element as HTMLElement);
   });
 };
 
-btnLanguage.addEventListener('click', toggleLanguage);
+if (btnLanguage) {
+  btnLanguage.addEventListener('click', toggleLanguage);
+}
