@@ -77,6 +77,10 @@ const translations: Record<string, Record<string, string>> = {
     en: 'A Back end Developer.',
     es: 'Desarrollador Front end.',
   },
+  'experience': {
+    en: 'Experience',
+    es: 'Experiencia',
+  },
   'expertise': {
     en: 'Expertise',
     es: 'Conocimientos',
@@ -136,6 +140,38 @@ const translations: Record<string, Record<string, string>> = {
   'formbutton': {
     en: 'Send',
     es: 'Enviar',
+  },
+  'expduoctitle': {
+    en: 'Professional Internship: Developer',
+    es: 'Práctica Profesional: Desarrollador',
+  },
+  'expduocdate': {
+    en: 'October 2023 - December 2023',
+    es: 'Octubre 2023 - Diciembre 2023',
+  },
+  'expduocabout': {
+    en: 'Development of a web management system for documents and resources.',
+    es: 'Desarrollo de un sistema de gestión web para documentos y recursos.',
+  },
+  'expduocdesc': {
+    en: 'The implementation of the web system brought the following benefits to the company: efficient task automation, remote access to information, centralization and organization of resources, data security, and improvement in data-driven decision-making.',
+    es: 'La implementación del sistema web aportó los siguientes beneficios a la empresa: automatización eficiente de tareas, acceso remoto a la información, centralización y organización de recursos, seguridad de datos y mejora en la toma de decisiones basada en datos.',
+  },
+  'exptvtitle': {
+    en: 'Work Placement: Developer',
+    es: 'Práctica Profesional: Desarrollador',
+  },
+  'exptvdate': {
+    en: 'February 2023 - March 2023',
+    es: 'Febrero 2023 - Marzo 2023',
+  },
+  'exptvabout': {
+    en: 'Maintenance, error correction, and implementation of new functionalities for the company\'s website.',
+    es: 'Mantenimiento, corrección de errores e implementación de nuevas funcionalidades para el sitio web de la empresa.',
+  },
+  'exptvdesc': {
+    en: 'Website maintenance, error fixes, and enhancements yielded notable improvements for the company, ensuring a secure, efficient, and feature-rich online environment.',
+    es: 'El mantenimiento del sitio web, las correcciones de errores y las mejoras proporcionaron mejoras notables para la empresa, garantizando un entorno en línea seguro, eficiente y rico en funciones.',
   },
 };
 
