@@ -15,14 +15,15 @@
       </div>
       <button type="submit" class="btn btn--outline translate" data-translate-key="formbutton">Send</button>
     </form>
-  
+    
     <script>
       import Toastify from 'toastify-js';
       import 'toastify-js/src/toastify.css';
 
       const emailInput = document.getElementById('email') as HTMLInputElement;
       const messageInput = document.getElementById('message') as HTMLTextAreaElement;
-      const submitButton = document.querySelector('.btn--outline') as HTMLButtonElement;
+      const form = document.getElementById('my-form') as HTMLFormElement;
+      const submitButton = document.getElementById('my-form-button') as HTMLButtonElement;
 
       const isValidEmail = (email: string): boolean => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -39,60 +40,68 @@
 
         emailInput.style.borderColor = isEmailValid ? 'green' : 'red';
         messageInput.style.borderColor = isTextValid ? 'green' : 'red';
+        submitButton.disabled = !(isEmailValid && isTextValid);
+        submitButton.style.cursor = (isEmailValid && isTextValid) ? 'pointer' : 'not-allowed';
       };
 
-      const showToast = (text: string, success: boolean) => {
-        const toastBackground = success ? getComputedStyle(document.body).getPropertyValue('--clr-primary') : "linear-gradient(to right, #ff0000, #ff9999)";
+      emailInput.addEventListener('input', updateValidation);
+      messageInput.addEventListener('input', updateValidation);
+
+      async function handleSubmit(event: Event) {
+        event.preventDefault();
+
+        const isEmailValid = isValidEmail(emailInput.value);
+        const isTextValid = isValidText(messageInput.value);
+
+        if (!(isEmailValid && isTextValid)) {
+          showToast('Error', false);
+          return;
+        }
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json',
+            },
+          });
+
+          if (response.ok) {
+            form.reset();
+            showToast('Message Sent', true);
+          } else {
+            const data = await response.json();
+            if (Object.prototype.hasOwnProperty.call(data, 'errors')) {
+              const errorMessage = data['errors'].map((error: any) => error['message']).join(', ');
+              showToast(errorMessage, false);
+            } else {
+              showToast('Error', false);
+            }
+          }
+        } catch (error) {
+          showToast('Error', false);
+        }
+      }
+
+      form.addEventListener('submit', handleSubmit);
+
+      function showToast(text: string, success: boolean) {
+        const toastBackground = success ? getComputedStyle(document.body).getPropertyValue('--clr-primary') : 'linear-gradient(to right, #ff0000, #ff9999)';
         const toastTextColor = success ? getComputedStyle(document.body).getPropertyValue('--clr-bg') : undefined;
 
         Toastify({
           text,
           duration: 2000,
           close: true,
-          gravity: "bottom",
-          position: "center",
+          gravity: 'bottom',
+          position: 'center',
           stopOnFocus: true,
           style: {
             background: toastBackground,
             color: toastTextColor,
           },
         }).showToast();
-      };
-
-      const submitForm = (e: Event) => {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-
-        const isEmailValid = isValidEmail(emailInput.value);
-        const isTextValid = isValidText(messageInput.value);
-
-        updateValidation();
-
-        if (isEmailValid && isTextValid) {
-          showToast("Message Sent", true);
-
-          fetch('https://formspree.io/f/mzblnaop', {
-            method: 'POST',
-            body: new FormData(e.target as HTMLFormElement),
-            mode: 'no-cors'
-          })
-            .then(response => {
-              (e.target as HTMLFormElement).reset();
-            })
-            .catch((error) => {
-              showToast("Error", false);
-            });
-        } else {
-          showToast("Error", false);
-        }
-      };
-
-      emailInput.addEventListener('input', updateValidation);
-      messageInput.addEventListener('input', updateValidation);
-
-      const form = document.getElementById('my-form');
-      if (form instanceof HTMLFormElement) {
-        form.addEventListener('submit', submitForm);
       }
     </script>
   </section>
