@@ -173,7 +173,17 @@ const translations: Record<string, Record<string, string>> = {
     en: 'Website maintenance, error fixes, and enhancements yielded notable improvements for the company, ensuring a secure, efficient, and feature-rich online environment.',
     es: 'El mantenimiento del sitio web, las correcciones de errores y las mejoras proporcionaron mejoras notables para la empresa, garantizando un entorno en línea seguro, eficiente y rico en funciones.',
   },
+  'toastSuccess': {
+    en: 'Message Sent',
+    es: 'Mensaje enviado',
+  },
+  'toastError': {
+    en: 'Error',
+    es: 'Error',
+  },
 };
+
+export default translations;
 
 let currentLanguage: 'en' | 'es' = 'en';
 
