@@ -2,9 +2,113 @@
 
 ---
 
-<section class="section contact center" id="contact">
+  <section class="section contact center" id="contact">
     <h2 class="section__title translate" data-translate-key="contact">Contact</h2>
-    <a href="mailto:carlos.iah17@gmail.com">
-      <span class="btn btn--outline translate" data-translate-key="emailme">Email me</span>
-    </a>
+    <form id="my-form" action="https://formspree.io/f/mzblnaop" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="email" class="translate" data-translate-key="formemail">Your email:</label>
+        <input type="email" name="email" minlength="5" maxlength="50" class="input-field">
+      </div>
+      <div class="form-group">
+        <label for="message" class="translate" data-translate-key="formmessage">Your message:</label>
+        <textarea name="message" minlength="10" maxlength="1000" class="input-field textarea"></textarea>
+      </div>
+      <button type="submit" class="btn btn--outline translate" data-translate-key="formbutton">Send</button>
+    </form>
+  
+    <script>
+      import Toastify from 'toastify-js';
+      import 'toastify-js/src/toastify.css';
+  
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.getElementById('my-form');
+        if (form instanceof HTMLFormElement) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+  
+            fetch('https://formspree.io/f/mzblnaop', {
+              method: 'POST',
+              body: new FormData(this),
+              mode: 'no-cors'
+            })
+            .then(response => {
+              form.reset();
+              const toastBackground = getComputedStyle(document.body).getPropertyValue('--clr-primary');
+              const toastTextColor = getComputedStyle(document.body).getPropertyValue('--clr-bg');
+              Toastify({
+                text: "Message Sent",
+                duration: 2000,
+                close: true,
+                gravity: "bottom",
+                position: "center",
+                stopOnFocus: true,
+                style: {
+                  background: toastBackground,
+                  color: toastTextColor,
+                },
+              }).showToast();
+            })
+            .catch((error) => {
+              const toastBackground = "linear-gradient(to right, #ff0000, #ff9999)";
+              Toastify({
+                text: "Error",
+                duration: 2000,
+                close: true,
+                gravity: "bottom",
+                position: "center",
+                stopOnFocus: true,
+                style: {
+                  background: toastBackground,
+                },
+              }).showToast();
+            });
+  
+            return false;
+          });
+        }
+      });
+    </script>
   </section>
+  
+  <style is:global>
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .input-field, .textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid var(--clr-primary);
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    .textarea {
+      height: 150px; /* Ajusta la altura según tus necesidades */
+      resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+    }
+  
+    .btn--outline {
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  
+    @media (max-width: 600px) {
+      .contact-form {
+        max-width: 100%;
+      }
+    }
+  </style>
+  

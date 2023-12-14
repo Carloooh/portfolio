@@ -125,6 +125,18 @@ const translations: Record<string, Record<string, string>> = {
     en: 'Made with love &lt;3',
     es: 'Hecho con amor &lt;3',
   },
+  'formemail': {
+    en: 'Your email:',
+    es: 'Tu email:',
+  },
+  'formmessage': {
+    en: 'Your message:',
+    es: 'Tu mensaje:',
+  },
+  'formbutton': {
+    en: 'Send',
+    es: 'Enviar',
+  },
 };
 
 let currentLanguage: 'en' | 'es' = 'en';

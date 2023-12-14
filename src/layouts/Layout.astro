@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -38,6 +39,7 @@ const { title } = Astro.props;
   font-size: inherit;
   box-shadow: none;
   box-sizing: border-box;
+  /* cursor: none; */
 }
 
 html {
@@ -131,10 +133,12 @@ button {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
   position: relative;
+  /* cursor: none; */
 }
 
 .link:hover {
   color: var(--clr-primary);
+  /* cursor: none; */
 }
 
 .link::before {
@@ -162,6 +166,7 @@ button {
 .link--icon {
   color: var(--clr-fg);
   font-size: 1.2rem;
+  /* cursor: none; */
 }
 
 .btn {
@@ -212,20 +217,24 @@ button {
 
 .btn--plain:hover {
   transform: translateY(-4px);
+  /* cursor: none; */
 }
 
 .btn--icon {
   padding: 0;
   font-size: 1.2rem;
+  /* cursor: none; */
 }
 
 .btn--icon:hover,
 .btn--icon:focus {
   color: var(--clr-primary);
+  /* cursor: none; */
 }
 
 .btn--icon:active {
   transform: translateY(-5px);
+  /* cursor: none; */
 }
 
 /*========
@@ -247,6 +256,7 @@ button {
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  /* cursor: none; */
 }
 
 main {
@@ -440,4 +450,16 @@ main {
     display: none;
   }
 }
+
+/* textarea, input{
+  cursor: none;
+  resize: none;
+  color: white;
+  border: 1px solid white; 
+  padding: 10px;
+}
+button{
+  cursor: none;
+  border: 1px solid white; 
+} */
 </style>
