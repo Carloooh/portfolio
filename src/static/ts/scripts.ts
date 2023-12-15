@@ -70,12 +70,12 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Carlos Azócar',
   },
   'specialty': {
-    en: 'A Back end Developer.',
-    es: 'Desarrollador Front end.',
+    en: 'A Web Developer.',
+    es: 'Desarrollador Web.',
   },
   'aboutme': {
-    en: 'A Back end Developer.',
-    es: 'Desarrollador Front end.',
+    en: 'Independent and proactive, I feel at home in the backend universe. I develop with dedication, breathing life into each line of code with care, commitment, and enthusiasm.',
+    es: 'Autónomo y proactivo, me siento en casa en el universo del backend. Desarrollo con dedicación, dando vida a cada línea de código con cariño, compromiso y entusiasmo.',
   },
   'experience': {
     en: 'Experience',
@@ -212,4 +212,26 @@ const toggleLanguage = () => {
 
 if (btnLanguage) {
   btnLanguage.addEventListener('click', toggleLanguage);
+}
+
+
+// cv download
+
+const downloadCvButton = document.querySelector('.btn--download-cv') as HTMLElement;
+
+const downloadCv = () => {
+  const cvFileName = currentLanguage === 'en' ? 'CV_CarlosAzocar_ENG.pdf' : 'CV_CarlosAzocar_ESP.pdf';
+  const cvFilePath = `/${cvFileName}`;
+
+  const link = document.createElement('a');
+  link.href = cvFilePath;
+  link.download = cvFileName;
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+if (downloadCvButton) {
+  downloadCvButton.addEventListener('click', downloadCv);
 }
