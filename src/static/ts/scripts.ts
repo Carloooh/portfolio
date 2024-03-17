@@ -98,12 +98,12 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Enviar email',
   },
   'project1': {
-    en: 'Project 1',
-    es: 'Proyecto 1',
+    en: 'YouTube Media Downloader',
+    es: 'YouTube Media Downloader',
   },
   'project1desc': {
-    en: 'Project 1',
-    es: 'Proyecto 1',
+    en: 'YouTube media downloader created with Next.js and ytdl-core.',
+    es: 'Descargador de contenido de YouTube creado con Next.js y ytdl-core.',
   },
   'project2': {
     en: 'Project 2',
