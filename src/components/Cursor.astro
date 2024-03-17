@@ -13,7 +13,7 @@
   .cursor-dot {
     width: 5px;
     height: 5px;
-    background-color: white; /* Color por defecto */
+    background-color: white;
   }
 
   .cursor-outline {
@@ -31,6 +31,12 @@
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
+  }
+
+  @media (pointer: coarse) {
+    .cursor-dot, .cursor-outline {
+      display: none;
+    }
   }
 </style>
 
