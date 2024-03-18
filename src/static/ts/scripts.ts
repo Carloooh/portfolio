@@ -106,12 +106,12 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Descargador de contenido de YouTube creado con Next.js y ytdl-core.',
   },
   'project2': {
-    en: 'Project 2',
-    es: 'Proyecto 2',
+    en: 'Tetris',
+    es: 'Tetris',
   },
   'project2desc': {
-    en: 'Project 2',
-    es: 'Proyecto 2',
+    en: 'Tetris created with vanilla JavaScript.',
+    es: 'Tetris creado con JavaScript puro.',
   },
   'project3': {
     en: 'Project 3',
