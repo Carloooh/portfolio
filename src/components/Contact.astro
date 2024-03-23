@@ -70,6 +70,7 @@
           if (response.ok) {
             form.reset();
             showToast('Message Sent', true);
+            resetValidation();
           } else {
             const data = await response.json();
             if (Object.prototype.hasOwnProperty.call(data, 'errors')) {
@@ -85,6 +86,11 @@
       }
 
       form.addEventListener('submit', handleSubmit);
+
+      function resetValidation() {
+        emailInput.style.borderColor = '';
+        messageInput.style.borderColor = '';
+      }
 
       function showToast(text: string, success: boolean) {
         const toastBackground = success ? getComputedStyle(document.body).getPropertyValue('--clr-primary') : 'linear-gradient(to right, #ff0000, #ff9999)';
