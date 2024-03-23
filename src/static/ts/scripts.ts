@@ -181,6 +181,26 @@ const translations: Record<string, Record<string, string>> = {
     en: 'Error',
     es: 'Error',
   },
+  'extra': {
+    en: 'Extra',
+    es: 'Extra',
+  },
+  'extra1': {
+    en: 'Full Stack JS Course',
+    es: 'Curso Full Stack de JS',
+  },
+  'extra1desc': {
+    en: 'I am currently enrolled in the certified Full Stack Open online course, which is based on JavaScript and offered by the University of Helsinki.',
+    es: 'Actualmente estoy inscrito en el curso en línea certificado Full Stack Open, el cual se basa en JavaScript y es ofrecido por la Universidad de Helsinki.',
+  },
+  'extra2': {
+    en: 'Real-Time Chat Course',
+    es: 'Curso de Chat en Tiempo Real',
+  },
+  'extra2desc': {
+    en: 'I completed a Full Stack project following a real-time chat course akin to Messenger, which enabled me to delve into Front-End, Back-End, Authentication with other platforms, as well as real-time features such as user status and messaging.',
+    es: 'Completé un proyecto Full Stack siguiendo un curso de chat en tiempo real similar a Messenger, lo que me permitió adentrarme en el Front-End, Back-End, autenticación con otras plataformas y características en tiempo real como el estado del usuario y la mensajería.',
+  },
 };
 
 export default translations;
