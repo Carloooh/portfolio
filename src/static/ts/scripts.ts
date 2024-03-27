@@ -70,12 +70,12 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Carlos Azócar',
   },
   'specialty': {
-    en: 'A Web Developer.',
-    es: 'Desarrollador Web.',
+    en: 'Full-Stack Developer.',
+    es: 'Desarrollador Full-Stack.',
   },
   'aboutme': {
-    en: 'Independent and proactive, I feel at home in the backend universe. I develop with dedication, breathing life into each line of code with care, commitment, and enthusiasm.',
-    es: 'Autónomo y proactivo, me siento en casa en el universo del backend. Desarrollo con dedicación, dando vida a cada línea de código con cariño, compromiso y entusiasmo.',
+    en: 'Independent and proactive. I develop with dedication, breathing life into each line of code with care, commitment, and enthusiasm.',
+    es: 'Autónomo y proactivo. Desarrollo con dedicación, dando vida a cada línea de código con cariño, compromiso y entusiasmo.',
   },
   'experience': {
     en: 'Experience',
@@ -114,12 +114,12 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Tetris creado con JavaScript puro.',
   },
   'project3': {
-    en: 'Project 3',
-    es: 'Proyecto 3',
+    en: 'URL Shortener',
+    es: 'Acortador de URL',
   },
   'project3desc': {
-    en: 'Project 3',
-    es: 'Proyecto 3',
+    en: 'URL Shortener that uses my own API created with Express.js and MongoDB.',
+    es: 'Acortador de URL que utiliza mi propia API creada con Express.js y MongoDB',
   },
   'cv': {
     en: 'Download CV',
@@ -146,8 +146,8 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Práctica Profesional: Desarrollador',
   },
   'expduocdate': {
-    en: 'October 2023 - December 2023',
-    es: 'Octubre 2023 - Diciembre 2023',
+    en: 'September 2023 - December 2023',
+    es: 'Septiembre 2023 - Diciembre 2023',
   },
   'expduocabout': {
     en: 'Development of a web management system for documents and resources.',
