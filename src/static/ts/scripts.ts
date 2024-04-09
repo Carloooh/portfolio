@@ -118,8 +118,8 @@ const translations: Record<string, Record<string, string>> = {
     es: 'Acortador de URL',
   },
   'project3desc': {
-    en: 'URL Shortener that uses my own API created with Express.js and MongoDB.',
-    es: 'Acortador de URL que utiliza mi propia API creada con Express.js y MongoDB',
+    en: 'URL Shortener that uses my own API created with Express and MongoDB.',
+    es: 'Acortador de URL que utiliza mi propia API creada con Express y MongoDB',
   },
   'cv': {
     en: 'Download CV',
