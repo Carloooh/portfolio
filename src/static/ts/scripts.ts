@@ -102,16 +102,16 @@ const translations: Record<string, Record<string, string>> = {
     es: 'YouTube Media Downloader',
   },
   'project1desc': {
-    en: 'YouTube media downloader created with Next.js and ytdl-core.',
-    es: 'Descargador de contenido de YouTube creado con Next.js y ytdl-core.',
+    en: 'YT media downloader created with Next.js and ytdl-core.',
+    es: 'Descargador de contenido de YT creado con Next.js y ytdl-core.',
   },
   'project2': {
     en: 'Tetris',
     es: 'Tetris',
   },
   'project2desc': {
-    en: 'Tetris created with vanilla JavaScript.',
-    es: 'Tetris creado con JavaScript puro.',
+    en: 'Classic Tetris game created with Canvas, vanilla JavaScript and CSS.',
+    es: 'Clásico juego de Tetris desarrollado con Canvas, JavaScript nativo y CSS.',
   },
   'project3': {
     en: 'URL Shortener',
