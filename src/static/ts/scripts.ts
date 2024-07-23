@@ -121,6 +121,10 @@ const translations: Record<string, Record<string, string>> = {
     en: 'URL Shortener that uses my own API created with Express and MongoDB.',
     es: 'Acortador de URL que utiliza mi propia API creada con Express y MongoDB',
   },
+  'project4desc': {
+    en: 'An AI voice assistant created with Next.js, Groq and tts.',
+    es: 'Asistente IA con voz creado con Next.js, Groq y tts.',
+  },
   'cv': {
     en: 'Download CV',
     es: 'Descargar CV',
