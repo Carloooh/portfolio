@@ -244,7 +244,7 @@ if (btnLanguage) {
 const downloadCvButton = document.querySelector('.btn--download-cv') as HTMLElement;
 
 const downloadCv = () => {
-  const cvFileName = currentLanguage === 'en' ? 'CV_Carlos_Azocar_ENG.pdf' : 'CV_Carlos_Azocar_ESP.pdf';
+  const cvFileName = currentLanguage === 'en' ? 'Resume_Carlos_Azocar.pdf' : 'CV_Carlos_Azocar.pdf';
   const cvFilePath = `/${cvFileName}`;
 
   const link = document.createElement('a');
