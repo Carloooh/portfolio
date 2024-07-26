@@ -117,6 +117,14 @@ const translations: Record<string, Record<string, string>> = {
     en: 'URL Shortener',
     es: 'Acortador de URL',
   },
+  'project4': {
+    en: 'Echo AI assistant',
+    es: 'Asistente Echo IA',
+  },
+  'project5': {
+    en: 'Screen Recorder',
+    es: 'Grabador de Pantalla',
+  },
   'project3desc': {
     en: 'URL Shortener that uses my own API created with Express and MongoDB.',
     es: 'Acortador de URL que utiliza mi propia API creada con Express y MongoDB',
