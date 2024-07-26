@@ -125,6 +125,10 @@ const translations: Record<string, Record<string, string>> = {
     en: 'An AI voice assistant created with Next.js, Groq and tts.',
     es: 'Asistente IA con voz creado con Next.js, Groq y tts.',
   },
+  'project5desc': {
+    en: 'A screen recorder developed with JS, Astro and Tailwind CSS.',
+    es: 'Grabador de pantalla desarrollado con JS, Astro y Tailwind CSS.',
+  },
   'cv': {
     en: 'Download CV',
     es: 'Descargar CV',
