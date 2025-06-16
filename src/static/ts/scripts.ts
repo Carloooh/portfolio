@@ -158,8 +158,8 @@ const translations: Record<string, Record<string, string>> = {
     es: "Enviar",
   },
   expmunicipalidadtitle: {
-    en: "Software Developer",
-    es: "Desarrollador de Software",
+    en: "Full Stack Developer",
+    es: "Desarrollador Full Stack",
   },
   expmunicipalidaddate: {
     en: "December 2024 - Present",
