@@ -162,8 +162,8 @@ const translations: Record<string, Record<string, string>> = {
     es: "Desarrollador Full Stack",
   },
   expmunicipalidaddate: {
-    en: "December 2024 - Present",
-    es: "Diciembre 2024 - Actualidad",
+    en: "October 2024 - Present",
+    es: "Octubre 2024 - Actualidad",
   },
   expmunicipalidadabout: {
     en: "Software Development, legacy software migration, and server management",
