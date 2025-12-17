@@ -170,8 +170,8 @@ const translations: Record<string, Record<string, string>> = {
     es: "Desarrollo de software, migración de software legacy y gestión de servidores",
   },
   expmunicipalidaddesc: {
-    en: "I’ve developed multiple websites according to the company’s needs, migrated legacy software to more modern technologies, managed application servers, databases, and overseen various projects.",
-    es: "He desarrollado múltiples sitios web según las necesidades de la empresa, migrado software legacy a tecnologías más modernas, gestionado servidores de aplicaciones, bases de datos y supervisado diversos proyectos.",
+    en: "I’ve developed multiple websites according to the company’s needs, migrated legacy software to more modern technologies, managed application servers, databases, and overseen various projects. I've also lead the development team.",
+    es: "He desarrollado múltiples sitios web según las necesidades de la empresa, migrado software legacy a tecnologías más modernas, gestionado servidores de aplicaciones, bases de datos y supervisado diversos proyectos. También he liderado el equipo de desarrollo.",
   },
 
   expduoctitle: {
