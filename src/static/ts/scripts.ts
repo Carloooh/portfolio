@@ -74,8 +74,8 @@ const translations: Record<string, Record<string, string>> = {
     es: "Desarrollador Full-Stack.",
   },
   aboutme: {
-    en: "Independent and proactive. I develop with dedication, breathing life into each line of code with care, commitment, and enthusiasm.",
-    es: "Autónomo y proactivo. Desarrollo con dedicación, dando vida a cada línea de código con cariño, compromiso y entusiasmo.",
+    en: "Independent and proactive Full Stack Developer with a strong interest in software development, technology, and continuous learning. I enjoy building web applications with care, commitment, and attention to detail, turning ideas into functional and reliable products that create real value through problem solving.",
+    es: "Desarrollador Full Stack independiente y proactivo con un fuerte interés en el desarrollo de software, la tecnología y el aprendizaje continuo. Disfruto construyendo aplicaciones web con cuidado, compromiso y atención al detalle, transformando ideas en productos funcionales y confiables que crean valor real a través de la resolución de problemas.",
   },
   experience: {
     en: "Experience",
@@ -162,8 +162,8 @@ const translations: Record<string, Record<string, string>> = {
     es: "Desarrollador Full Stack",
   },
   expmunicipalidaddate: {
-    en: "October 2024 - Present",
-    es: "Octubre 2024 - Actualidad",
+    en: "August 2024 - Present",
+    es: "Agosto 2024 - Actualidad",
   },
   expmunicipalidadabout: {
     en: "Software Development, legacy software migration, and server management",
