@@ -207,12 +207,12 @@ const translations: Record<string, Record<string, string>> = {
     es: "Extra",
   },
   extra1: {
-    en: "Full Stack JS Course",
-    es: "Curso Full Stack de JS",
+    en: "Full Stack Open Course",
+    es: "Curso Full Stack Open",
   },
   extra1desc: {
-    en: "I am currently enrolled in the certified Full Stack Open online course, which is based on JavaScript and offered by the University of Helsinki.",
-    es: "Actualmente estoy inscrito en el curso en línea certificado Full Stack Open, el cual se basa en JavaScript y es ofrecido por la Universidad de Helsinki.",
+    en: "I am certified in the Full Stack Open online course, which is based on JavaScript and offered by the University of Helsinki.",
+    es: "Estoy certificado en el curso en línea Full Stack Open, el cual se basa en JavaScript y es ofrecido por la Universidad de Helsinki.",
   },
   extra2: {
     en: "Real-Time Chat Course",
