@@ -279,8 +279,8 @@ const downloadCvButton = document.querySelector(
 const downloadCv = () => {
   const cvFileName =
     currentLanguage === "en"
-      ? "Resume_Carlos_Azocar.pdf"
-      : "CV_Carlos_Azocar.pdf";
+      ? "Carlos Azocar - Full Stack Developer RESUME.pdf"
+      : "Carlos Azocar - Desarrollador Full Stack CV.pdf";
   const cvFilePath = `/${cvFileName}`;
 
   const link = document.createElement("a");
