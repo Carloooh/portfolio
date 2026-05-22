@@ -158,53 +158,41 @@ const translations: Record<string, Record<string, string>> = {
     es: "Enviar",
   },
   expmunicipalidadtitle: {
-    en: "Full Stack Developer",
-    es: "Desarrollador Full Stack",
+    en: "Lead Software Developer",
+    es: "Desarrollador Líder de Software",
   },
   expmunicipalidaddate: {
     en: "August 2024 - Present",
     es: "Agosto 2024 - Actualidad",
   },
-  expmunicipalidadabout: {
-    en: "Software Development, legacy software migration, and server management",
-    es: "Desarrollo de software, migración de software legacy y gestión de servidores",
-  },
   expmunicipalidaddesc: {
-    en: "I’ve developed multiple websites according to the company’s needs, migrated legacy software to more modern technologies, managed application servers, databases, and overseen various projects. I've also lead the development team.",
-    es: "He desarrollado múltiples sitios web según las necesidades de la empresa, migrado software legacy a tecnologías más modernas, gestionado servidores de aplicaciones, bases de datos y supervisado diversos proyectos. También he liderado el equipo de desarrollo.",
+    en: "Designed, developed, and automated various custom web platforms and critical administrative processes through self-managed solutions, reducing manual operation times.<br /><br />Led the migration of legacy systems to modern technologies, optimizing maintainability and ensuring service continuity.<br /><br />Independently managed the infrastructure, handling servers, databases, application deployments, and implementing strict cybersecurity, access control, and backup policies.<br /><br />Managed the full lifecycle of IT projects, covering technical planning, development, end-user training, and post-implementation support.<br /><br />Led development efforts and coordinated the assigned technical team to ensure the successful execution of the institution’s internal projects.",
+    es: "Diseñé, desarrollé y automaticé diversas plataformas web a medida y procesos administrativos críticos mediante soluciones autogestionables, reduciendo tiempos de operación manual.<br /><br />Lideré la migración de sistemas legacy hacia tecnologías modernas, optimizando la mantenibilidad y garantizando la continuidad operativa de los servicios.<br /><br />Administré de forma autónoma la infraestructura, gestionando servidores, bases de datos, despliegues de aplicaciones y ejecutando políticas estrictas de ciberseguridad, control de accesos y respaldos.<br /><br />Gestioné el ciclo completo de proyectos TI, abarcando desde la planificación técnica y desarrollo hasta la capacitación de usuarios finales y soporte postimplementación.<br /><br />Lideré el desarrollo y coordiné al equipo técnico asignado para la correcta ejecución de los distintos proyectos internos de la institución.",
   },
 
   expduoctitle: {
-    en: "Professional Internship: Developer",
-    es: "Práctica Profesional: Desarrollador",
+    en: "Professional Internship: Full Stack Developer",
+    es: "Práctica Profesional: Desarrollador Full Stack",
   },
   expduocdate: {
     en: "September 2023 - December 2023",
     es: "Septiembre 2023 - Diciembre 2023",
   },
-  expduocabout: {
-    en: "Development of a web management system for documents and resources.",
-    es: "Desarrollo de un sistema de gestión web para documentos y recursos.",
-  },
   expduocdesc: {
-    en: "The implementation of the web system brought the following benefits to the company: efficient task automation, remote access to information, centralization and organization of resources, data security, and improvement in data-driven decision-making.",
-    es: "La implementación del sistema web aportó los siguientes beneficios a la empresa: automatización eficiente de tareas, acceso remoto a la información, centralización y organización de recursos, seguridad de datos y mejora en la toma de decisiones basada en datos.",
+    en: "Managed a software development project using the Scrum methodology.<br /><br />Developed a full-stack web application with relational database design and implementation.<br /><br />Implemented automations that reduced operational times by up to 99%, improving the security, consistency, and availability of information.",
+    es: "Gestioné un proyecto de desarrollo de software bajo metodología Scrum.<br /><br />Desarrollé una aplicación web full-stack con diseño e implementación de base de datos relacional.<br /><br />Implementé automatizaciones que redujeron tiempos operativos hasta en un 99%, mejorando la seguridad, consistencia y disponibilidad de la información.",
   },
   exptvtitle: {
-    en: "Work Placement: Developer",
-    es: "Práctica Profesional: Desarrollador",
+    en: "Work Internship: Web Developer",
+    es: "Práctica Laboral: Desarrollador Web",
   },
   exptvdate: {
     en: "February 2023 - March 2023",
     es: "Febrero 2023 - Marzo 2023",
   },
-  exptvabout: {
-    en: "Maintenance, error correction, and implementation of new functionalities for the company's website.",
-    es: "Mantenimiento, corrección de errores e implementación de nuevas funcionalidades para el sitio web de la empresa.",
-  },
   exptvdesc: {
-    en: "Website maintenance, error fixes, and enhancements yielded notable improvements for the company, ensuring a secure, efficient, and feature-rich online environment.",
-    es: "El mantenimiento del sitio web, las correcciones de errores y las mejoras proporcionaron mejoras notables para la empresa, garantizando un entorno en línea seguro, eficiente y rico en funciones.",
+    en: "Performed maintenance, bug fixing, and implementation of new features for the institutional website, improving the user experience.<br /><br />Developed an Android mobile application to strengthen the company’s digital presence.<br /><br />Managed the creation of website backups, ensuring service continuity and efficient error resolution.",
+    es: "Realicé mantenimiento, corrección de errores e implementación de nuevas funcionalidades al sitio web institucional, mejorando la experiencia de usuario.<br /><br />Desarrollé una aplicación móvil para Android para fortalecer la presencia digital de la empresa.<br /><br />Administré la creación de copias de seguridad de la pagina web, asegurando la continuidad operativa del servicio y la resolución eficiente de errores.",
   },
   toastSuccess: {
     en: "Message Sent",
